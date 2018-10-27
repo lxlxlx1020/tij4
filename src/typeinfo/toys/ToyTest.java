@@ -30,9 +30,6 @@ public class ToyTest {
     Class c = null;
     try {
       c = Class.forName("typeinfo.toys.FancyToy");
-      FancyToy ft = new FancyToy();
-      Class ftc = ft.getClass();
-      System.out.println(c.equals(ftc));
     } catch(ClassNotFoundException e) {
       print("Can't find FancyToy");
       System.exit(1);
