@@ -13,13 +13,13 @@ public class LostInformation {
     Quark<Fnorkle> quark = new Quark<Fnorkle>();
     Particle<Long,Double> p = new Particle<Long,Double>();
     System.out.println(Arrays.toString(
-      list.getClass().getTypeParameters()));
+            list.getClass().getTypeParameters()));
     System.out.println(Arrays.toString(
-      map.getClass().getTypeParameters()));
+            map.getClass().getTypeParameters()));
     System.out.println(Arrays.toString(
-      quark.getClass().getTypeParameters()));
+            quark.getClass().getTypeParameters()));
     System.out.println(Arrays.toString(
-      p.getClass().getTypeParameters()));
+            p.getClass().getTypeParameters()));
   }
 } /* Output:
 [E]

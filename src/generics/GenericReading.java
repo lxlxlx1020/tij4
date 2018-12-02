@@ -35,8 +35,18 @@ public class GenericReading {
       new CovariantReader<Fruit>();
     Fruit f = fruitReader.readCovariant(fruit);
     Fruit a = fruitReader.readCovariant(apples);
-  }	
+  }
+
+  static void show(List<? super Number> n_list) {
+    for (Object o: n_list) {
+      System.out.println(o);
+    }
+  }
   public static void main(String[] args) {
-    f1(); f2(); f3();
+//    f1(); f2(); f3();
+    List<? super Number> n_list = new ArrayList<>();
+    n_list.add(new Integer(0));
+    n_list.add(new Double(0));
+    show(n_list);
   }
 } ///:~

@@ -3,7 +3,9 @@ package generics;//: generics/Manipulation.java
 
 class Manipulator<T> {
   private T obj;
-  public Manipulator(T x) { obj = x; }
+  public Manipulator(T x) {
+    obj = x;
+  }
   // Error: cannot find symbol: method f():
 //  public void manipulate() { obj.f(); }
 }
