@@ -28,6 +28,7 @@ public class IceCream {
     for(int i = 0; i < 7; i++)
       System.out.println(Arrays.toString(flavorSet(3)));
   }
+
 } /* Output:
 [Rum Raisin, Mint Chip, Mocha Almond Fudge]
 [Chocolate, Strawberry, Mocha Almond Fudge]
