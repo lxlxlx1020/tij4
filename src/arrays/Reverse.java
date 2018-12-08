@@ -10,6 +10,7 @@ public class Reverse {
       new CompType[12], CompType.generator());
     print("before sorting:");
     print(Arrays.toString(a));
+    print(Arrays.copyOf(a,3));
     Arrays.sort(a, Collections.reverseOrder());
     print("after sorting:");
     print(Arrays.toString(a));
