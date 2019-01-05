@@ -12,6 +12,13 @@ public class Whip extends CondimentDecorator {
 	}
  
 	public double cost() {
-		return .10 + beverage.cost();
+		double d;
+		switch (size) {
+			case tall: d=.10;break;
+			case grande: d=.15;break;
+			case venti: d=.20;break;
+			default:d=0;
+		}
+		return d + beverage.cost();
 	}
 }

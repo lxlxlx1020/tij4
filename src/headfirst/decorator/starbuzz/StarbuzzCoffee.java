@@ -11,6 +11,7 @@ public class StarbuzzCoffee {
 		beverage2 = new Mocha(beverage2);
 		beverage2 = new Mocha(beverage2);
 		beverage2 = new Whip(beverage2);
+		beverage2.setSize(Beverage.Size.grande);
 		System.out.println(beverage2.getDescription() 
 				+ " $" + beverage2.cost());
  
@@ -18,6 +19,7 @@ public class StarbuzzCoffee {
 		beverage3 = new Soy(beverage3);
 		beverage3 = new Mocha(beverage3);
 		beverage3 = new Whip(beverage3);
+		beverage3.setSize(Beverage.Size.venti);
 		System.out.println(beverage3.getDescription() 
 				+ " $" + beverage3.cost());
 	}
