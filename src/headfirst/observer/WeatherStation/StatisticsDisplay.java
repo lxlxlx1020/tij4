@@ -1,7 +1,6 @@
 package headfirst.observer.WeatherStation;
 
 import java.util.*;
-import java.util.Observer;
 
 public class StatisticsDisplay implements Observer, DisplayElement {
 	private float maxTemp = 0.0f;
@@ -22,7 +21,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 		if (temp > maxTemp) {
 			maxTemp = temp;
 		}
- 
+
 		if (temp < minTemp) {
 			minTemp = temp;
 		}

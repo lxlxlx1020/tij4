@@ -1,6 +1,5 @@
 package headfirst.observer.WeatherStation;
 
-import java.util.*;
 
 public class WeatherStation {
 
@@ -13,7 +12,12 @@ public class WeatherStation {
 		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 
 		weatherData.setMeasurements(80, 65, 30.4f);
+		weatherData.removeObserver(statisticsDisplay);
 		weatherData.setMeasurements(82, 70, 29.2f);
+		weatherData.removeObserver(currentDisplay);
+		System.out.println("--------add HeatIndexDisplay--------");
+		HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
 		weatherData.setMeasurements(78, 90, 29.2f);
+
 	}
 }
