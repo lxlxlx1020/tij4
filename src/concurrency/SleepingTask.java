@@ -10,7 +10,7 @@ public class SleepingTask extends LiftOff {
         // Old-style:
         // Thread.sleep(100);
         // Java SE5/6-style:
-        TimeUnit.MILLISECONDS.sleep(100);
+        TimeUnit.MILLISECONDS.sleep(1000);
       }
     } catch(InterruptedException e) {
       System.err.println("Interrupted");
