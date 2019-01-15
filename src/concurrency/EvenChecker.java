@@ -10,7 +10,13 @@ public class EvenChecker implements Runnable {
   }
   public void run() {
     while(!generator.isCanceled()) {
-      int val = generator.next();
+      int val = 0;
+      try {
+        val = generator.next();
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+      System.out.println(Thread.currentThread() + "-------" + val);
       if(val % 2 != 0) {
         System.out.println(val + " not even!");
         generator.cancel(); // Cancels all EvenCheckers

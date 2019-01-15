@@ -2,7 +2,7 @@ package concurrency;//: concurrency/IntGenerator.java
 
 public abstract class IntGenerator {
   private volatile boolean canceled = false;
-  public abstract int next();
+  public abstract int next() throws InterruptedException;
   // Allow this to be canceled:
   public void cancel() { canceled = true; }
   public boolean isCanceled() { return canceled; }
